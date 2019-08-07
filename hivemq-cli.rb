@@ -2,7 +2,7 @@ require "formula"
 
 class hivemqCli < Formula
   homepage "https://hivemq.com"
-  url "path_to_distribution_file/mqtt-cli-1.0-distribution.zip"
+  url "path_to_distribution_file/hivemq-cli-1.0-distribution.zip"
   sha256 "c59fa90c5c298c5d4e127d375ec1113a20ebaf8de51f3fa542ea11d419926ee0"
 
   def install
