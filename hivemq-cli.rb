@@ -1,13 +1,16 @@
-require "formula"
-
-class hivemqCli < Formula
-  homepage "https://hivemq.com"
-  url "path_to_distribution_file/hivemq-cli-1.0-distribution.zip"
-  sha256 "c59fa90c5c298c5d4e127d375ec1113a20ebaf8de51f3fa542ea11d419926ee0"
-
+class HivemqCli < Formula
+  desc "The HiveMQ CLI Tool"
+  homepage "https://www.hivemq.com"
+  url "https://www.hivemq.com/tests/hivemq-cli-1.0-distribution.zip"
+  sha256 "b79ab87a9064ec122e538e06c6d3c3594440221fd52e450a2831aac5e9a31605"
   def install
-      inreplace "brew/hivemq-cli", "##PREFIX##", "#{prefix}"
-      prefix.install "hivemq-cli.jar"
-      bin.install "brew/hivemq-cli"
+    depends_on :java => "1.8+"
+    inreplace "brew/hivemq-cli", "##PREFIX##", "#{prefix}"
+    prefix.install "hivemq-cli.jar"
+    bin.install "brew/hivemq-cli"
+  end
+
+  test do
+    system "false"
   end
 end
