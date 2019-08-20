@@ -2,7 +2,7 @@ class HivemqCli < Formula
   desc "The HiveMQ CLI Tool"
   homepage "https://www.hivemq.com"
   url "https://www.hivemq.com/tests/hivemq-cli-1.0-distribution.zip"
-  sha256 "02639b844537169267593cbf5e8322998a15d36b3b6fcf3504669ae54c3a59de"
+  sha256 "980c477bf7f96d97a2f34c98f22949c75906542800fa7aa249130bf09498e5e4"
   depends_on :java => "1.8+"
   
   def install
