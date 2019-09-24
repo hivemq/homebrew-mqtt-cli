@@ -1,4 +1,4 @@
-class HivemqCli < Formula
+class MqttCli < Formula
   desc "MQTT CLI is a tool that provides a feature rich command line interface for connecting, publishing, subscribing, unsubscribing and disconnecting various MQTT clients simultaneously and supports  MQTT 5.0 and MQTT 3.1.1 "
   homepage "https://www.hivemq.com"
   url "https://github.com/hivemq/mqtt-cli/releases/download/v1.0.0/mqtt-cli-1.0.0-brew.zip"
