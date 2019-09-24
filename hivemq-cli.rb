@@ -1,14 +1,14 @@
 class HivemqCli < Formula
-  desc "The HiveMQ CLI Tool"
+  desc "MQTT CLI is a tool that provides a feature rich command line interface for connecting, publishing, subscribing, unsubscribing and disconnecting various MQTT clients simultaneously and supports  MQTT 5.0 and MQTT 3.1.1 "
   homepage "https://www.hivemq.com"
-  url "https://www.hivemq.com/tests/hivemq-cli-1.0-distribution.zip"
-  sha256 "c58b7ac1601f9f52c1487440cf9c734ef52fe179dc8389c88acfdbe81e5208d0"
+  url "https://github.com/hivemq/mqtt-cli/releases/download/v1.0.0/mqtt-cli-1.0.0-brew.zip"
+  sha256 "4e408f63cb4ab35d75351ca7c508aaf07c28b6dc53053cac08734cf7fc9b1564"
   depends_on :java => "1.8+"
-  
+
   def install
-    inreplace "brew/hivemq-cli", "##PREFIX##", "#{prefix}"
-    prefix.install "hivemq-cli.jar"
-    bin.install "brew/hivemq-cli"
+    inreplace "brew/mqtt-cli", "##PREFIX##", "#{prefix}"
+    prefix.install "mqtt-cli-1.0.0.jar"
+    bin.install "brew/mqtt"
   end
 
   test do
