@@ -6,7 +6,7 @@ class MqttCli < Formula
   depends_on :java => "1.8+"
 
   def install
-    inreplace "brew/mqtt", "##PREFIX##", "#{prefix}"
+    inreplace "brew/mqtt", "##PREFIX##", "#{prefix}/mqtt-cli-1.0.0.jar"
     prefix.install "mqtt-cli-1.0.0.jar"
     bin.install "brew/mqtt"
   end
