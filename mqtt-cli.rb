@@ -3,7 +3,7 @@ class MqttCli < Formula
   homepage "https://www.hivemq.com"
   url "https://github.com/hivemq/mqtt-cli/releases/download/v4.4.3/mqtt-cli-4.4.3-brew.zip"
   sha256 "be62ca280285bb7afddeea996be6c4d968a5a844d8757622b5d7b4df3bf3f519"
-  depends_on :java => "1.8+"
+  # depends_on :java => "1.8+"
 
   def install
     inreplace "brew/mqtt", "##PREFIX##", "#{prefix}/mqtt-cli-4.4.3.jar"
