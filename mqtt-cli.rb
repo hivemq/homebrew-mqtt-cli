@@ -1,13 +1,13 @@
 class MqttCli < Formula
   desc "MQTT CLI is a tool that provides a feature rich command line interface for connecting, publishing, subscribing, unsubscribing and disconnecting various MQTT clients simultaneously and supports  MQTT 5.0 and MQTT 3.1.1 "
   homepage "https://www.hivemq.com"
-  url "https://github.com/hivemq/mqtt-cli/releases/download/v4.7.4/mqtt-cli-4.7.4-brew.zip"
-  sha256 "12bd5534cca653b47f03f2a2609d6755b9f7a48ce6e3de86fc9c0a35aa717a6c"
+  url "https://github.com/hivemq/mqtt-cli/releases/download/v4.7.5/mqtt-cli-4.7.5-brew.zip"
+  sha256 "cfa0ddece144ae5372940bffb5c384a7a37989df0efc41983f4315f8abeb74f9"
   # depends_on :java => "1.8+"
 
   def install
-    inreplace "brew/mqtt", "##PREFIX##", "#{prefix}/mqtt-cli-4.7.4.jar"
-    prefix.install "brew/mqtt-cli-4.7.4.jar"
+    inreplace "brew/mqtt", "##PREFIX##", "#{prefix}/mqtt-cli-4.7.5.jar"
+    prefix.install "brew/mqtt-cli-4.7.5.jar"
     bin.install "brew/mqtt"
   end
 
